@@ -3,7 +3,7 @@
 $info = array(
 	'name' => t('Markdown'),
 	'description' => t('Конвертирует разметку Markdown в HTML'),
-	'version' => '0.1',
+	'version' => '0.2',
 	'author' => 'Nikita A Menkovich',
 	'plugin_url' => 'http://libc6.org/plugins/markdown.html',
 	'author_url' => 'http://libc6.org/',
