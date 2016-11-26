@@ -1116,7 +1116,7 @@ class Markdown_Parser {
 
 	function doCodeBlocks($text) {
 	#
-	#	Process Markdown `<pre><code>` blocks.
+	#	Process Markdown `<pre>` blocks.
 	#
 		$text = preg_replace_callback('{
 				(?:\n\n|\A\n?)
