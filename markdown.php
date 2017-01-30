@@ -1116,7 +1116,7 @@ class Markdown_Parser {
 
 	function doCodeBlocks($text) {
 	#
-	#	Process Markdown `<pre><code>` blocks.
+	#	Process Markdown `<pre>` blocks.
 	#
 		$text = preg_replace_callback('{
 				(?:\n\n|\A\n?)
@@ -1141,7 +1141,7 @@ class Markdown_Parser {
 		# trim leading newlines and trailing newlines
 		$codeblock = preg_replace('/\A\n+|\n+\z/', '', $codeblock);
 
-		$codeblock = "<pre><code>$codeblock\n</code></pre>";
+		$codeblock = "<pre>$codeblock\n</pre>";
 		return "\n\n".$this->hashBlock($codeblock)."\n\n";
 	}
 
